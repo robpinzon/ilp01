@@ -1,0 +1,210 @@
+/* I LOVE PAMPANGA - Custom Modern Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap');
+
+:root {
+  --color-terracotta: #C85A32;
+  --color-terracotta-dark: #9E3C1A;
+  --color-terracotta-light: #FDF1EB;
+  --color-forest: #1E4D3B;
+  --color-forest-dark: #123326;
+  --color-forest-light: #EBF4F0;
+  --color-gold: #E5A93C;
+  --color-gold-dark: #B57F1E;
+  --color-gold-light: #FDF6E9;
+  --color-bg-warm: #FAF8F5;
+  --color-card-bg: #FFFFFF;
+  --color-text-main: #1C2421;
+  --color-text-muted: #596560;
+  --color-border: #E8E2D8;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-warm);
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #F1ECE4;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C9BA;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-terracotta);
+}
+
+/* Typography Enhancements */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Gradients */
+.bg-gradient-hero {
+  background: linear-gradient(135deg, #163C2E 0%, #1E4D3B 50%, #295F4A 100%);
+}
+
+.bg-warm-canvas {
+  background-color: var(--color-bg-warm);
+}
+
+.text-terracotta {
+  color: var(--color-terracotta);
+}
+.bg-terracotta {
+  background-color: var(--color-terracotta);
+}
+.border-terracotta {
+  border-color: var(--color-terracotta);
+}
+
+.text-forest {
+  color: var(--color-forest);
+}
+.bg-forest {
+  background-color: var(--color-forest);
+}
+.border-forest {
+  border-color: var(--color-forest);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+/* Glassmorphism Navigation */
+.navbar-glass {
+  background: rgba(253, 251, 247, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(232, 226, 216, 0.8);
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 10px 30px -10px rgba(22, 60, 46, 0.12);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+/* Parallax Silhouette Overlay */
+.mountain-silhouette-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  pointer-events: none;
+}
+
+/* Reveal on Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Interactive Hover Cards */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(30, 77, 59, 0.14);
+}
+
+/* Badges */
+.badge-gold {
+  background-color: var(--color-gold-light);
+  color: var(--color-gold-dark);
+  border: 1px solid rgba(229, 169, 60, 0.35);
+}
+
+.badge-terracotta {
+  background-color: var(--color-terracotta-light);
+  color: var(--color-terracotta);
+  border: 1px solid rgba(200, 90, 50, 0.25);
+}
+
+.badge-forest {
+  background-color: var(--color-forest-light);
+  color: var(--color-forest);
+  border: 1px solid rgba(30, 77, 59, 0.2);
+}
+
+/* Modal Backdrop */
+.modal-overlay {
+  background-color: rgba(18, 51, 38, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Accordion Smooth Expand */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-content.open {
+  max-height: 2000px;
+  transition: max-height 0.4s ease-in-out;
+}
+
+/* Tab active styles */
+.tab-active {
+  background-color: var(--color-terracotta) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(200, 90, 50, 0.25);
+}
+
+/* Sound ripple effect */
+@keyframes ripple {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.4; }
+  100% { transform: scale(1.3); opacity: 0; }
+}
+
+.anim-ripple {
+  animation: ripple 1.6s infinite ease-out;
+}

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Love Pampanga | The Culinary &amp; Heritage Capital of the Philippines</title>
+  <meta name="description" content="Discover Pampanga: explore 22 vibrant cities and historic towns, 538 verified barangays, world-famous culinary artistry, colonial churches, and Mount Arayat eco-adventures.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via official Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: {
+              DEFAULT: '#C85A32',
+              dark: '#9E3C1A',
+              light: '#FDF1EB',
+            },
+            forest: {
+              DEFAULT: '#1E4D3B',
+              dark: '#123326',
+              light: '#EBF4F0',
+            },
+            gold: {
+              DEFAULT: '#E5A93C',
+              dark: '#B57F1E',
+              light: '#FDF6E9',
+            },
+            canvas: '#FAF8F5'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body class="bg-[#FAF8F5] text-stone-900 selection:bg-amber-200 selection:text-amber-950">
+
+  <!-- ======================================================================
+       STICKY RESPONSIVE NAVBAR
+       ====================================================================== -->
+  <header id="navbar" class="navbar-glass sticky top-0 z-40 w-full transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo Component -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-emerald-700 rounded-xl p-1">
+        <!-- SVG Vector Mount Arayat Logo Component -->
+        <div class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 transition-transform duration-300 group-hover:scale-105">
+          <svg viewBox="0 0 140 140" class="w-full h-full drop-shadow-sm">
+            <defs>
+              <linearGradient id="navSun" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FCD34D"/>
+                <stop offset="100%" stop-color="#F59E0B"/>
+              </linearGradient>
+              <linearGradient id="navMountain" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#2D6A50"/>
+                <stop offset="60%" stop-color="#1E4D3B"/>
+                <stop offset="100%" stop-color="#123528"/>
+              </linearGradient>
+              <linearGradient id="navHeart" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#E56A44"/>
+                <stop offset="100%" stop-color="#B84A2A"/>
+              </linearGradient>
+            </defs>
+            <circle cx="70" cy="70" r="66" fill="#FAF7F2" stroke="#E6DFD5" stroke-width="2"/>
+            <circle cx="70" cy="70" r="62" fill="none" stroke="#E5A93C" stroke-width="1.5" stroke-dasharray="3,3"/>
+            <!-- Sun Rays & Disc -->
+            <circle cx="70" cy="56" r="22" fill="url(#navSun)"/>
+            <!-- Mount Arayat Twin-Shoulder Silhouette -->
+            <path d="M 16 110 C 34 96, 48 76, 64 56 C 68 50, 72 48, 76 50 C 82 56, 94 78, 108 96 C 116 104, 122 108, 126 112 Z" fill="url(#navMountain)"/>
+            <!-- Rio Grande de Pampanga River Waves -->
+            <path d="M 18 112 C 38 106, 56 120, 74 112 C 92 104, 108 118, 122 112 L 122 122 C 108 124, 92 114, 74 120 C 56 126, 38 114, 18 120 Z" fill="#0284C7"/>
+            <!-- Heart Badge in center -->
+            <path d="M 70 88 C 66 80, 54 81, 54 88 C 54 96, 66 102, 70 106 C 74 102, 86 96, 86 88 C 86 81, 74 80, 70 88 Z" fill="url(#navHeart)" stroke="#FFFFFF" stroke-width="1.5"/>
+          </svg>
+        </div>
+        
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5 leading-none">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-700 font-sans">Kapampangan Pride</span>
+          </div>
+          <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-emerald-950 font-serif leading-tight">
+            I Love <span class="text-terracotta">Pampanga</span>
+          </span>
+          <span class="text-[10px] text-stone-500 font-medium tracking-wide">ilovepampanga.com</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="#cities" class="hover:text-emerald-800 transition py-1 border-b-2 border-transparent hover:border-emerald-800">Cities &amp; Towns</a>
+        <a href="#culinary" class="hover:text-amber-800 transition py-1 border-b-2 border-transparent hover:border-amber-800">Culinary Capital</a>
+        <a href="#churches" class="hover:text-emerald-800 transition py-1 border-b-2 border-transparent hover:border-emerald-800">Colonial Churches</a>
+        <a href="#attractions" class="hover:text-amber-800 transition py-1 border-b-2 border-transparent hover:border-amber-800">Attractions</a>
+        <a href="#culture" class="hover:text-emerald-800 transition py-1 border-b-2 border-transparent hover:border-emerald-800">Language &amp; Quiz</a>
+      </nav>
+
+      <!-- Desktop Search & Action -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button 
+          type="button" 
+          class="open-search-modal-trigger inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-stone-100 hover:bg-stone-200/80 text-stone-600 text-xs font-medium border border-stone-200 transition"
+          aria-label="Open Global Search">
+          <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>Search towns, food, churches...</span>
+          <kbd class="font-mono bg-white text-stone-500 px-1.5 py-0.5 rounded text-[10px] border border-stone-300">Ctrl K</kbd>
+        </button>
+
+        <a 
+          href="#cities" 
+          class="px-4 py-2 rounded-2xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold transition shadow-sm hover:shadow">
+          Explore Directory
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button 
+          type="button" 
+          class="open-search-modal-trigger p-2 rounded-xl bg-stone-100 text-stone-700 hover:bg-stone-200"
+          aria-label="Search">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </button>
+        <button 
+          type="button" 
+          id="mobile-menu-btn" 
+          class="p-2 rounded-xl bg-emerald-800 text-white hover:bg-emerald-900 focus:outline-none"
+          aria-label="Toggle navigation drawer">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transform translate-x-full transition-transform duration-300 lg:hidden flex justify-end">
+    <div class="w-4/5 max-w-sm bg-white h-full shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-stone-100">
+          <div class="flex items-center gap-2">
+            <span class="text-lg font-bold font-serif text-emerald-900">I Love Pampanga</span>
+          </div>
+          <button id="close-drawer-btn" class="p-2 text-stone-400 hover:text-stone-700 rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <nav class="flex flex-col gap-4 mt-6 text-base font-semibold text-stone-700">
+          <a href="#cities" class="drawer-link py-2 px-3 rounded-xl hover:bg-emerald-50 hover:text-emerald-800 transition">🏛️ Cities &amp; Municipalities</a>
+          <a href="#culinary" class="drawer-link py-2 px-3 rounded-xl hover:bg-amber-50 hover:text-amber-800 transition">🍲 Culinary Capital (Food)</a>
+          <a href="#churches" class="drawer-link py-2 px-3 rounded-xl hover:bg-emerald-50 hover:text-emerald-800 transition">⛪ Colonial Historic Churches</a>
+          <a href="#attractions" class="drawer-link py-2 px-3 rounded-xl hover:bg-amber-50 hover:text-amber-800 transition">🌄 Tourist Spots &amp; Arayat</a>
+          <a href="#itineraries" class="drawer-link py-2 px-3 rounded-xl hover:bg-stone-50 transition">🗺️ Suggested Itineraries</a>
+          <a href="#culture" class="drawer-link py-2 px-3 rounded-xl hover:bg-stone-50 transition">🗣️ Kapampangan Phrases &amp; Quiz</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-stone-100">
+        <button 
+          type="button" 
+          class="open-search-modal-trigger w-full py-3 px-4 rounded-xl bg-stone-100 text-stone-700 text-sm font-semibold flex items-center justify-center gap-2 mb-3">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>Global Search (538 Barangays)</span>
+        </button>
+        <div class="text-[11px] text-stone-400 text-center">
+          Official Tourism &amp; Heritage Guide of Pampanga
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       HERO BANNER SECTION
+       ====================================================================== -->
+  <section class="relative bg-gradient-hero text-white overflow-hidden pt-12 pb-24 sm:pt-20 sm:pb-32">
+    <!-- Ambient Glow / Radial Background Accents -->
+    <div class="absolute top-0 right-0 -mr-48 -mt-48 w-96 h-96 rounded-full bg-amber-400/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 -ml-48 -mb-48 w-96 h-96 rounded-full bg-emerald-400/10 blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+      
+      <!-- Kicker Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-300 text-xs sm:text-sm font-semibold mb-6 animate-pulse">
+        <span>✨ Welcome to Central Luzon's Crown Jewel</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+        <span class="text-white/80">Est. 1571</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-serif tracking-tight text-white leading-tight max-w-5xl mx-auto">
+        The Culinary &amp; Heritage Capital of the <span class="text-amber-300 italic font-normal">Philippines</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="mt-6 text-base sm:text-xl text-stone-200 max-w-3xl mx-auto leading-relaxed">
+        From the fiery sizzle of Angeles City’s authentic Sisig to the half-buried Baroque marvel of Bacolor, explore 22 vibrant LGUs, 538 official barangays, and the timeless majesty of Mount Arayat.
+      </p>
+
+      <!-- Live Quick Search in Hero -->
+      <div class="mt-8 max-w-2xl mx-auto">
+        <div class="relative">
+          <input 
+            type="text" 
+            id="hero-quick-search"
+            placeholder="Search any town, official barangay, heirloom dish, or colonial church..." 
+            class="w-full py-4 pl-12 pr-28 rounded-2xl bg-white text-stone-800 placeholder-stone-400 shadow-2xl focus:outline-none focus:ring-4 focus:ring-amber-400/50 text-sm sm:text-base font-medium">
+          <div class="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <button 
+            type="button" 
+            class="open-search-modal-trigger absolute right-2.5 top-1/2 -translate-y-1/2 px-4 py-2 bg-emerald-800 hover:bg-emerald-900 text-white rounded-xl text-xs font-bold transition">
+            Search
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Jump Buttons -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs sm:text-sm font-semibold">
+        <a href="#cities" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white transition hover:-translate-y-0.5">
+          🏛️ 22 Cities &amp; Municipalities
+        </a>
+        <a href="#culinary" class="px-4 py-2.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 backdrop-blur-md border border-amber-300/30 text-amber-200 transition hover:-translate-y-0.5">
+          🍲 Food Specialties per Town
+        </a>
+        <a href="#churches" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white transition hover:-translate-y-0.5">
+          ⛪ Historic Colonial Churches
+        </a>
+        <a href="#attractions" class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white transition hover:-translate-y-0.5">
+          🌄 Mount Arayat &amp; Attractions
+        </a>
+      </div>
+
+      <!-- Stats Counters Container -->
+      <div id="hero-stats-container" class="mt-12"></div>
+
+    </div>
+
+    <!-- Mount Arayat Silhouette Graphic Banner at bottom of Hero -->
+    <div class="mountain-silhouette-bg">
+      <svg viewBox="0 0 1440 160" fill="none" class="w-full h-auto" preserveAspectRatio="none">
+        <path d="M0,160 L0,130 Q360,110 520,70 Q620,45 720,20 Q820,45 920,70 Q1080,110 1440,130 L1440,160 Z" fill="#FAF8F5" fill-opacity="1"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 2: CITIES & MUNICIPALITIES DIRECTORY (WITH BARANGAY LISTINGS)
+       ====================================================================== -->
+  <section id="cities" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 mb-2">
+          🏛️ Official Provincial Directory
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-stone-900 tracking-tight">
+          Cities &amp; Municipalities of Pampanga
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-2 max-w-2xl">
+          Verified Philippine Statistics Authority (PSA) and DILG directory covering all 22 LGUs and their complete official barangay listings.
+        </p>
+      </div>
+
+      <!-- Live Count Badge -->
+      <div id="lgu-count-badge" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-stone-100 text-stone-600 border border-stone-200 self-start md:self-auto">
+        Showing all 22 LGUs
+      </div>
+    </div>
+
+    <!-- Filter Bar & Search -->
+    <div class="bg-white p-4 rounded-3xl border border-stone-200 shadow-sm mb-8 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+        <button type="button" data-lgu-filter="all" class="lgu-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-800 text-white shadow-sm">All (22)</button>
+        <button type="button" data-lgu-filter="cities" class="lgu-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">Cities (3)</button>
+        <button type="button" data-lgu-filter="dist1" class="lgu-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">1st District</button>
+        <button type="button" data-lgu-filter="dist2" class="lgu-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">2nd District</button>
+        <button type="button" data-lgu-filter="dist3" class="lgu-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">3rd District</button>
+        <button type="button" data-lgu-filter="dist4" class="lgu-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">4th District</button>
+      </div>
+
+      <!-- Search in LGUs -->
+      <div class="relative w-full lg:w-80">
+        <input 
+          type="text" 
+          id="lgu-search-input" 
+          placeholder="Filter town or barangay..." 
+          class="w-full pl-9 pr-4 py-2 bg-stone-50 border border-stone-200 rounded-xl text-xs font-medium text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+        <svg class="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      </div>
+    </div>
+
+    <!-- Grid Container -->
+    <div id="lgus-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 3: CULINARY CAPITAL SHOWCASE
+       ====================================================================== -->
+  <section id="culinary" class="py-20 bg-amber-50/40 border-y border-amber-100/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200 mb-2">
+            🍲 Gastronomic Heritage of the Philippines
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-stone-900 tracking-tight">
+            Food Specialty per City &amp; Town
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base mt-2 max-w-2xl">
+            Tracing every iconic Kapampangan dish to its exact geographic birthplace—from Aling Lucing's sizzling Sisig in Angeles to century-old Turrones de Casuy in Santa Rita.
+          </p>
+        </div>
+
+        <!-- Food Category Filters -->
+        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+          <button type="button" data-food-tag="all" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition bg-amber-800 text-white shadow-sm">All Flavors</button>
+          <button type="button" data-food-tag="savory" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">Savory</button>
+          <button type="button" data-food-tag="heritage" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">Heritage</button>
+          <button type="button" data-food-tag="sweets" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">Sweets</button>
+          <button type="button" data-food-tag="exotic" class="food-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-50 border border-stone-200">Exotic</button>
+        </div>
+      </div>
+
+      <!-- Food Grid -->
+      <div id="food-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 4: HISTORIC CHURCHES & RELIGIOUS HERITAGE
+       ====================================================================== -->
+  <section id="churches" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 mb-2">
+        ⛪ Living Sanctuaries &amp; National Treasures
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-stone-900 tracking-tight">
+        Historic Colonial Churches
+      </h2>
+      <p class="text-stone-600 text-sm sm:text-base mt-3 leading-relaxed">
+        Centuries-old brick fortresses, lahar-submerged sanctuaries, and the "Sistine Chapel of the Philippines"—revered testaments of Kapampangan devotion and architectural mastery.
+      </p>
+    </div>
+
+    <!-- Churches Grid -->
+    <div id="churches-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 5: TOURIST SPOTS & FAMOUS DESTINATIONS
+       ====================================================================== -->
+  <section id="attractions" class="py-20 bg-stone-100/60 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200 mb-2">
+            🌄 Eco-Adventures, Theme Parks &amp; Vistas
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-stone-900 tracking-tight">
+            Iconic Destinations &amp; Attractions
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base mt-2 max-w-2xl">
+            From the mystical peaks of Mount Arayat and Candaba’s migratory bird wetlands to the kaleidoscopic spectacle of the Giant Lantern Festival.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tourist Spots Grid -->
+      <div id="spots-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 6: SUGGESTED TRAVEL ITINERARIES
+       ====================================================================== -->
+  <section id="itineraries" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 mb-2">
+        🗺️ Curated Travel Trails
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-stone-900 tracking-tight">
+        Recommended Pampanga Itineraries
+      </h2>
+      <p class="text-stone-600 text-sm sm:text-base mt-3">
+        Tailored day-by-day routes designed for culinary adventurers, history enthusiasts, and nature explorers.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- 1-Day Heritage & Foodie Express -->
+      <div class="bg-white rounded-3xl border border-stone-200 p-8 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-800 border border-amber-300">
+              1-Day Classic Trail
+            </span>
+            <span class="text-xs font-semibold text-stone-500">Duration: 12 Hours</span>
+          </div>
+
+          <h3 class="text-2xl font-bold font-serif text-stone-900 mb-2">
+            The Ultimate Culinary &amp; Heritage Blitz
+          </h3>
+          <p class="text-stone-600 text-xs sm:text-sm mb-6 leading-relaxed">
+            Experience the culinary titans and iconic historic churches across Angeles, Guagua, Bacolor, and San Fernando.
+          </p>
+
+          <ol class="relative border-l-2 border-emerald-200 ml-3 space-y-6 text-xs text-stone-600">
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-emerald-700 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">8:00 AM – Holy Rosary &amp; Pamintuan Mansion</h4>
+              <p class="mt-1">Tour Angeles City’s Heritage District and savor native hot chocolate with Tsokolate de Batirol.</p>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-emerald-700 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">11:30 AM – Birthplace of Sisig (Aling Lucing)</h4>
+              <p class="mt-1">Relish sizzling pork sisig at the legendary railroad crossing in Angeles City.</p>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-emerald-700 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">2:00 PM – Betis Church &amp; Woodcarvers of Guagua</h4>
+              <p class="mt-1">Marvel at the painted ceilings of the Sistine Chapel of the Philippines and sample Razon's halo-halo.</p>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-emerald-700 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">4:30 PM – Bacolor Sunken Church</h4>
+              <p class="mt-1">Witness the half-buried San Guillermo Church and taste authentic Tibok-Tibok.</p>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-emerald-700 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">7:00 PM – San Fernando Dinner &amp; Giant Lanterns</h4>
+              <p class="mt-1">Fiesta dinner at Everybody’s Cafe (Morcon &amp; Bringhe) followed by the Giant Lantern exhibition.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 2-Day Eco-Adventure & Nature Trail -->
+      <div class="bg-white rounded-3xl border border-stone-200 p-8 shadow-sm hover:shadow-xl transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
+              2-Day Adventure Trail
+            </span>
+            <span class="text-xs font-semibold text-stone-500">Duration: 48 Hours</span>
+          </div>
+
+          <h3 class="text-2xl font-bold font-serif text-stone-900 mb-2">
+            Volcanoes, Wetlands &amp; Mount Arayat
+          </h3>
+          <p class="text-stone-600 text-xs sm:text-sm mb-6 leading-relaxed">
+            An adrenaline and ecotourism expedition exploring hot springs, wildlife sanctuaries, and scenic peaks.
+          </p>
+
+          <ol class="relative border-l-2 border-amber-300 ml-3 space-y-6 text-xs text-stone-600">
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-amber-600 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">Day 1 Morning – Mount Arayat National Park</h4>
+              <p class="mt-1">Hike the Pinnacle Peak Trail in Arayat, dip into spring pools, and enjoy Ensaladang Pako.</p>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-amber-600 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">Day 1 Afternoon – Clark Freeport &amp; Aqua Planet</h4>
+              <p class="mt-1">Afternoon water rides at Aqua Planet or cultural walk through Clark Parade Grounds.</p>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-amber-600 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">Day 2 Morning – Candaba Swamp Bird Sanctuary</h4>
+              <p class="mt-1">Sunrise birdwatching for thousands of Siberian migratory waterfowl; taste local salted duck eggs.</p>
+            </li>
+            <li class="ml-6">
+              <span class="absolute -left-2 top-0.5 w-4 h-4 rounded-full bg-amber-600 ring-4 ring-white"></span>
+              <h4 class="font-bold text-stone-900 text-sm">Day 2 Afternoon – Puning Hot Springs &amp; Sand Spa</h4>
+              <p class="mt-1">Off-road 4x4 safari through lahar canyons, thermal mineral baths, and volcanic sand burial therapy.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECTION 7: CULTURE, LANGUAGE & INTERACTIVE QUIZ
+       ====================================================================== -->
+  <section id="culture" class="py-20 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Phrasebook Header -->
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300 mb-2">
+          🗣️ Amanung Sisuan (Mother Tongue)
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-serif text-stone-900 tracking-tight">
+          Learn Essential Kapampangan
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base mt-2">
+          Click the sound icon to hear live phonetic audio pronunciation for everyday Kapampangan greetings and foodie expressions!
+        </p>
+      </div>
+
+      <!-- Phrasebook Grid -->
+      <div id="phrasebook-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-20"></div>
+
+      <!-- Interactive Culture Quiz Widget -->
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-8">
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-300 mb-2">
+            🏆 Kapampangan Trivia Challenge
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold font-serif text-stone-900 tracking-tight">
+            How Well Do You Know Pampanga?
+          </h3>
+          <p class="text-stone-500 text-xs sm:text-sm mt-1">
+            Test your knowledge of the culinary capital, historic churches, and folklore!
+          </p>
+        </div>
+
+        <!-- Quiz Card -->
+        <div id="quiz-card" class="bg-white rounded-3xl border border-stone-200 p-6 sm:p-8 shadow-sm">
+          <div class="flex items-center justify-between text-xs font-semibold text-stone-500 mb-4">
+            <span id="quiz-progress-text">Question 1 of 5</span>
+            <div class="w-32 bg-stone-100 rounded-full h-2 overflow-hidden">
+              <div id="quiz-progress-bar" class="bg-emerald-700 h-full w-1/5 transition-all duration-300"></div>
+            </div>
+          </div>
+
+          <div id="quiz-question-container"></div>
+
+          <div class="mt-6 flex justify-end">
+            <button 
+              type="button" 
+              id="quiz-next-btn" 
+              class="hidden px-5 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold transition shadow-sm">
+              Next Question →
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiz Results Card -->
+        <div id="quiz-results-card" class="hidden bg-white rounded-3xl border border-stone-200 p-8 sm:p-12 text-center shadow-lg">
+          <div id="quiz-score-display"></div>
+          <button 
+            type="button" 
+            id="quiz-restart-btn" 
+            class="mt-6 px-6 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold transition shadow-sm">
+            Retake Quiz
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="bg-stone-900 text-white pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12">
+              <img src="/logo-arayat.svg" alt="I Love Pampanga Logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <span class="text-2xl font-extrabold font-serif tracking-tight text-white">I Love <span class="text-amber-400">Pampanga</span></span>
+              <div class="text-[11px] text-stone-400">ilovepampanga.com</div>
+            </div>
+          </div>
+
+          <p class="text-stone-400 text-xs sm:text-sm leading-relaxed max-w-md">
+            The premier informational portal and heritage directory for the province of Pampanga, Philippines. Dedicated to preserving Kapampangan culture, culinary excellence, colonial architecture, and eco-tourism.
+          </p>
+
+          <div class="text-xs text-amber-400 font-serif italic">
+            "Manyaman a Kapampangan, Masanting a Balen"
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-4">Quick Directory</h4>
+          <ul class="space-y-2 text-xs text-stone-300">
+            <li><a href="#cities" class="hover:text-white transition">22 Cities &amp; Municipalities</a></li>
+            <li><a href="#culinary" class="hover:text-white transition">Iconic Dishes &amp; Food Trail</a></li>
+            <li><a href="#churches" class="hover:text-white transition">Historic Colonial Churches</a></li>
+            <li><a href="#attractions" class="hover:text-white transition">Mount Arayat &amp; Clark</a></li>
+            <li><a href="#culture" class="hover:text-white transition">Kapampangan Phrasebook</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Reliable Sources Acknowledgments -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-4">Official Sources</h4>
+          <ul class="space-y-2 text-xs text-stone-400">
+            <li>• Philippine Statistics Authority (PSA)</li>
+            <li>• Department of Tourism (DOT Region III)</li>
+            <li>• Provincial Government of Pampanga</li>
+            <li>• National Historical Commission (NHCP)</li>
+            <li>• Archdiocese of San Fernando</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Credit -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <div>
+          © 2026 I Love Pampanga (ilovepampanga.com). All rights reserved.
+        </div>
+        <div class="flex items-center gap-4">
+          <span>Crafted with pride for the Kapampangan community worldwide</span>
+          <span>•</span>
+          <button type="button" id="back-to-top" class="opacity-0 pointer-events-none transition-opacity duration-300 hover:text-amber-400 flex items-center gap-1">
+            <span>Back to top</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL 1: BARANGAY DIRECTORY MODAL
+       ====================================================================== -->
+  <div id="barangay-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div id="barangay-modal-overlay" class="modal-overlay fixed inset-0"></div>
+    <div class="relative bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden z-10 border border-stone-200">
+      
+      <!-- Modal Header -->
+      <div class="p-6 pb-4 border-b border-stone-100 flex items-start justify-between bg-stone-50/80">
+        <div>
+          <span id="modal-lgu-subtitle" class="text-xs font-bold uppercase tracking-wider text-emerald-800"></span>
+          <h3 id="modal-lgu-name" class="text-2xl font-bold font-serif text-stone-900 mt-0.5"></h3>
+          <p id="modal-lgu-overview" class="text-xs text-stone-600 mt-1 line-clamp-2"></p>
+        </div>
+        <button id="close-barangay-modal" class="p-2 text-stone-400 hover:text-stone-700 rounded-xl hover:bg-stone-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Search Within Barangays -->
+      <div class="p-4 bg-white border-b border-stone-100 flex items-center justify-between gap-3">
+        <div class="relative flex-1">
+          <input 
+            type="text" 
+            id="modal-barangay-search" 
+            placeholder="Search barangay name..." 
+            class="w-full pl-8 pr-3 py-2 bg-stone-50 border border-stone-200 rounded-xl text-xs font-medium text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+          <svg class="w-3.5 h-3.5 text-stone-400 absolute left-2.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+        <span id="modal-lgu-count" class="text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1.5 rounded-xl border border-emerald-200 shrink-0"></span>
+      </div>
+
+      <!-- Barangay List Grid -->
+      <div class="p-6 overflow-y-auto flex-1">
+        <div id="modal-barangay-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 bg-stone-50 border-t border-stone-100 text-center text-[11px] text-stone-400">
+        Verified official data per Philippine Statistics Authority (PSA) &amp; DILG Pampanga
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 2: CULINARY SPECIALTY RECIPE & STORY MODAL
+       ====================================================================== -->
+  <div id="food-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div id="food-modal-overlay" class="modal-overlay fixed inset-0"></div>
+    <div class="relative bg-white rounded-3xl shadow-2xl max-w-xl w-full max-h-[85vh] flex flex-col overflow-hidden z-10 border border-stone-200">
+      
+      <div class="p-6 pb-4 border-b border-stone-100 flex items-start justify-between bg-amber-50/60">
+        <div>
+          <span id="modal-food-town" class="text-xs font-bold uppercase tracking-wider text-amber-800"></span>
+          <h3 id="modal-food-name" class="text-2xl font-bold font-serif text-stone-900 mt-0.5"></h3>
+        </div>
+        <button id="close-food-modal" class="p-2 text-stone-400 hover:text-stone-700 rounded-xl hover:bg-stone-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-5 text-xs text-stone-600 leading-relaxed">
+        <div>
+          <h4 class="font-bold text-stone-900 text-sm mb-1.5 uppercase tracking-wide">Origin &amp; Cultural Heritage</h4>
+          <p id="modal-food-history" class="text-stone-700 leading-relaxed text-sm"></p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900">
+          <strong class="font-bold">✨ Culinary Fact:</strong>
+          <span id="modal-food-fact" class="ml-1"></span>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-stone-900 text-sm mb-2 uppercase tracking-wide">Key Ingredients</h4>
+          <ul id="modal-food-ingredients" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-stone-900 text-sm mb-1 uppercase tracking-wide">Where to Taste in Pampanga</h4>
+          <p id="modal-food-where" class="text-stone-800 font-medium"></p>
+        </div>
+      </div>
+
+      <div class="p-4 bg-stone-50 border-t border-stone-100 text-center text-[11px] text-stone-400">
+        Pampanga Culinary Heritage Archive • Authentic Traditional Recipes
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 3: CHURCH VISITOR GUIDE MODAL
+       ====================================================================== -->
+  <div id="church-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div id="church-modal-overlay" class="modal-overlay fixed inset-0"></div>
+    <div class="relative bg-white rounded-3xl shadow-2xl max-w-xl w-full max-h-[85vh] flex flex-col overflow-hidden z-10 border border-stone-200">
+      
+      <div class="p-6 pb-4 border-b border-stone-100 flex items-start justify-between bg-emerald-50/60">
+        <div>
+          <span id="modal-church-popular" class="text-xs font-bold uppercase tracking-wider text-emerald-800"></span>
+          <h3 id="modal-church-name" class="text-2xl font-bold font-serif text-stone-900 mt-0.5"></h3>
+        </div>
+        <button id="close-church-modal" class="p-2 text-stone-400 hover:text-stone-700 rounded-xl hover:bg-stone-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-5 text-xs text-stone-600 leading-relaxed">
+        <div>
+          <h4 class="font-bold text-stone-900 text-sm mb-1.5 uppercase tracking-wide">Historical Background</h4>
+          <p id="modal-church-desc" class="text-stone-700 leading-relaxed text-sm"></p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 p-3.5 rounded-2xl bg-stone-50 border border-stone-200">
+          <div>
+            <div class="text-[10px] uppercase font-bold text-stone-400">Architecture</div>
+            <div id="modal-church-style" class="font-semibold text-stone-800 text-xs mt-0.5"></div>
+          </div>
+          <div>
+            <div class="text-[10px] uppercase font-bold text-stone-400">Annual Feast</div>
+            <div id="modal-church-feast" class="font-semibold text-emerald-800 text-xs mt-0.5"></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-stone-900 text-sm mb-2 uppercase tracking-wide">Architectural Highlights</h4>
+          <ul id="modal-church-features" class="space-y-1.5"></ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-stone-900 text-sm mb-2 uppercase tracking-wide">Visitor Etiquette &amp; Guidelines</h4>
+          <ul id="modal-church-etiquette" class="space-y-1.5"></ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-stone-900 text-sm mb-1 uppercase tracking-wide">Holy Mass Schedules</h4>
+          <p id="modal-church-mass" class="text-stone-800 font-medium"></p>
+        </div>
+      </div>
+
+      <div class="p-4 bg-stone-50 border-t border-stone-100 text-center text-[11px] text-stone-400">
+        Archdiocese of San Fernando • National Cultural Heritage Sites
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 4: GLOBAL SEARCH MODAL (CTRL+K)
+       ====================================================================== -->
+  <div id="global-search-modal" class="hidden fixed inset-0 z-50 flex items-start justify-center p-4 pt-16 sm:pt-24">
+    <div id="global-search-overlay" class="modal-overlay fixed inset-0"></div>
+    <div class="relative bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[75vh] flex flex-col overflow-hidden z-10 border border-stone-200">
+      
+      <!-- Input Header -->
+      <div class="p-4 border-b border-stone-200 flex items-center gap-3">
+        <svg class="w-5 h-5 text-stone-400 ml-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input 
+          type="text" 
+          id="global-search-input" 
+          placeholder="Search all 22 LGUs, 538 official barangays, food, or colonial churches..." 
+          class="w-full text-sm font-medium text-stone-800 placeholder-stone-400 focus:outline-none">
+        <button id="close-global-search" class="text-stone-400 hover:text-stone-700 text-xs px-2 py-1 rounded-md bg-stone-100">ESC</button>
+      </div>
+
+      <!-- Quick Match Results List -->
+      <div id="global-search-results" class="p-4 overflow-y-auto space-y-1.5 flex-1">
+        <div class="py-12 text-center text-stone-400 text-xs">
+          Type any town, barangay, dish, or church name above...
+        </div>
+      </div>
+
+      <!-- Search Footer Hint -->
+      <div class="p-3 bg-stone-50 border-t border-stone-100 text-center text-[11px] text-stone-400 flex items-center justify-between px-6">
+        <span>Press <kbd class="font-mono bg-white px-1.5 py-0.5 rounded border border-stone-200 text-stone-600">ESC</kbd> to close</span>
+        <span>Instant Search across 538 Barangays &amp; 22 LGUs</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main JavaScript Module -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
