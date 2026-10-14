@@ -38,7 +38,7 @@ export const CITIES_AND_MUNICIPALITIES = [
     zipCode: "2009",
     patronSaint: "Our Lady of the Most Holy Rosary & Holy Guardian Angels",
     fiestaDate: "Last Sunday of October (Fiestang Kuliat) / October 2 (Holy Guardian Angels)",
-    overview: "Formerly known as 'Kuliat' after the woody vine abundant in the area, Angeles City separated from San Fernando in 1829. Elevated to a highly urbanized city in 1964, it boasts a rich convergence of revolutionary history, American military heritage via the former Clark Air Base, and an unmatched culinary legacy as the culinary epicenter of authentic Sisig.",
+    overview: "Formerly known as 'Kuliat' after the woody vine abundant in the area, Angeles City separated from San Fernando in 1829. Chartered as a city on January 1, 1964 (under RA 3700) and elevated to a Highly Urbanized City on October 13, 1986, it is the birthplace of authentic Philippine Sisig, home to the historic Santo Rosario Heritage District, and gateway to Clark Freeport Zone.",
     claimToFame: "Birthplace of authentic Philippine Sisig (Aling Lucing Cunanan), home to the historic Santo Rosario Heritage District, and gateway to Clark Freeport Zone.",
     foodSpecialty: "Authentic Sizzling Sisig, Mila's Tokwa't Baboy, Fried Hito, Tidtad (Kapampangan Dinuguan)",
     topSpots: ["Holy Rosary Parish Church (Pisamban Maragul)", "Pamintuan Mansion (Museum of Philippine Social History)", "Bale Herencia", "Center for Kapampangan Studies (Holy Angel University)", "Korean Town (Friendship Highway)"],
@@ -76,7 +76,7 @@ export const CITIES_AND_MUNICIPALITIES = [
       "Lourdes", "Magliman", "Maimpis", "Malino", "Malpitic", "Pandaras", 
       "Panipuan", "Pulung Bulu", "Quebiawan", "Saguin", "San Agustin", "San Felipe", 
       "San Isidro", "San Jose", "San Juan", "San Nicolas", "San Pedro Cutud", 
-      "Santa Lucia", "Santa Teresita", "Santo Niño", "Sindalan", "Telabastagan"
+      "Santa Lucia", "Santa Teresita", "Santo Niño", "Santo Rosario (Poblacion)", "Sindalan", "Telabastagan"
     ]
   },
   {
@@ -94,7 +94,7 @@ export const CITIES_AND_MUNICIPALITIES = [
     zipCode: "2010",
     patronSaint: "Our Lady of Grace (Nuestra Señora de Gracia)",
     fiestaDate: "February 2 (Caragan Festival) & May (Feast of Our Lady of Grace)",
-    overview: "Named after the indigenous 'Balacat' trees (Ziziphus talanai) that once dominated its lush foothills, Mabalacat became Pampanga's third city in 2012. It encompasses major portions of the Clark Freeport Zone, Clark International Airport, and serves as an economic powerhouse combining ancestral Aeta heritage, bustling logistics, and scenic nature.",
+    overview: "Named after the indigenous 'Balacat' trees (Ziziphus talanai) that once dominated its lush foothills, Mabalacat became Pampanga's second component city (and third city overall) in 2012. It encompasses major portions of the Clark Freeport Zone, Clark International Airport, and serves as an economic powerhouse combining ancestral Aeta heritage, bustling logistics, and scenic nature.",
     claimToFame: "Clark Freeport economic spine, vibrant Caragan Festival celebrating indigenous Aeta chieftain Caragan, and home of Kamaru delicacies.",
     foodSpecialty: "Kamaru (Crispy Field Crickets), Barbequed Isaw & Betamax, Pastillas de Leche, Native Puto",
     topSpots: ["Clark International Airport (Terminal 2)", "Our Lady of Grace Parish Church", "Aqua Planet", "Deca Clark Wakeboard Park", "Marina Golf & Clark Parade Grounds"],
@@ -103,7 +103,7 @@ export const CITIES_AND_MUNICIPALITIES = [
       "Dapdap", "Dau", "Dolores", "Duquit", "Lakandula", "Mabiga", 
       "Macapagal Village", "Mamatitang", "Mangalit", "Marcos Village", "Mauaque", 
       "Poblacion", "San Francisco", "San Joaquin", "Santa Ines", "Santa Maria", 
-      "Santo Rosario", "Sapang Balen", "Sapang Biabas", "Tabun"
+      "Paralayunan", "Santo Rosario", "Sapang Balen", "Sapang Biabas", "Tabun"
     ]
   },
   {
@@ -129,7 +129,7 @@ export const CITIES_AND_MUNICIPALITIES = [
       "Ascomo", "Bancal", "Jose Abad Santos (Siran)", "Lambac", "Magsaysay", 
       "Maquiapo", "Natividad", "Plaza Burgos", "Pulungmasle", "Rizal", 
       "San Agustin (Betis)", "San Antonio", "San Isidro", "San Jose", 
-      "San Juan Bautista (Betis)", "San Juan", "San Matias", "San Miguel (Betis)", 
+      "San Juan Bautista (Betis)", "San Juan 1st", "San Juan Nepomuceno (Betis)", "San Matias", "San Miguel (Betis)", 
       "San Nicolas 1st", "San Nicolas 2nd", "San Pablo", "San Pedro", 
       "San Rafael", "San Roque", "San Vicente", "Santa Filomena", 
       "Santa Ines (Betis)", "Santa Ursula (Betis)", "Santo Cristo", "Santo Niño"
@@ -138,7 +138,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "bacolor",
     name: "Bacolor",
-    type: "Municipality (3rd Class)",
+    type: "Municipality (1st Class)",
     isCapital: false,
     tagline: "The Athens of Pampanga & Resilient Lahar Heartland",
     district: "3rd Congressional District",
@@ -209,9 +209,9 @@ export const CITIES_AND_MUNICIPALITIES = [
     patronSaint: "Saint Catherine of Alexandria",
     fiestaDate: "November 25 (Feast of Saint Catherine)",
     overview: "Towering solitary over the vast plains of Central Luzon, Mount Arayat defines the skyline and spirit of Pampanga. According to folklore, it is the mystical abode of Apung Maria Sinukuan, the guardian deity of nature and abundance. The town of Arayat borders the Pampanga River and offers verdant eco-tourism, spring resorts, and trekking circuits.",
-    claimToFame: "Mount Arayat National Park, Pinnacle Rock Trail, legend of Maria Sinukuan, and freshwater fish cuisine from the Rio Grande de Pampanga.",
+    claimToFame: "Mount Arayat Protected Landscape, Pinnacle Rock Trail, legend of Maria Sinukuan, and freshwater fish cuisine from the Rio Grande de Pampanga.",
     foodSpecialty: "Inasal / Pritong Hito with Balo (fermented rice with shrimp), Sinigang sa Bayabas na Kanduli, Bico Kalabasa",
-    topSpots: ["Mount Arayat National Park", "Pinnacle Rock & South Peak Trails", "Saint Catherine of Alexandria Parish Church", "Arayat Ecopark Natural Spring Pools"],
+    topSpots: ["Mount Arayat Protected Landscape", "Pinnacle Rock & South Peak Trails", "Saint Catherine of Alexandria Parish Church", "Arayat Ecopark Natural Spring Pools"],
     barangays: [
       "Arenas", "Baliti", "Batasan", "Buensuceso", "Candating", "Cupang", 
       "Gatiawin", "Guintu", "Kaledian", "La Paz", "Lacmit", "Lacolao", 
@@ -234,7 +234,7 @@ export const CITIES_AND_MUNICIPALITIES = [
     population: 173403,
     barangayCount: 43,
     zipCode: "2021",
-    patronSaint: "Saint Monica & Santa Ana",
+    patronSaint: "Saint Monica (Santa Monica)",
     fiestaDate: "May 4 (Feast of Santa Monica)",
     overview: "Named 'Masiku' (meaning 'elbow' of the river) or derived from New Spain's Mexico City due to trade ties with the Manila-Acapulco Galleon Trade, Mexico was one of Pampanga's earliest and wealthiest Augustinian conventos. Today, it stands as a bustling commercial and light-industrial junction bridging northern and central Pampanga.",
     claimToFame: "Historic Manila-Acapulco Galleon connections, Santa Monica Parish belfry, and famous roadside grilled catfish (hito) and native delicacies.",
@@ -283,7 +283,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "santa-rita",
     name: "Santa Rita",
-    type: "Municipality (4th Class)",
+    type: "Municipality (2nd Class)",
     isCapital: false,
     tagline: "Home of the Duman Festival & Heirloom Turrones de Casuy",
     district: "2nd Congressional District",
@@ -334,7 +334,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "sasmuan",
     name: "Sasmuan (Sexmoan)",
-    type: "Municipality (4th Class)",
+    type: "Municipality (3rd Class)",
     isCapital: false,
     tagline: "The Coastal Wetland & Mangrove Haven of Pampanga",
     district: "2nd Congressional District",
@@ -387,7 +387,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "minalin",
     name: "Minalin",
-    type: "Municipality (4th Class)",
+    type: "Municipality (2nd Class)",
     isCapital: false,
     tagline: "The Egg Basket of Luzon & Home of the Santa Monica Church",
     district: "4th Congressional District",
@@ -439,11 +439,11 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "masantol",
     name: "Masantol",
-    type: "Municipality (2nd Class)",
+    type: "Municipality (1st Class)",
     isCapital: false,
     tagline: "The Coastal Seafood Sanctuary of Pampanga Delta",
     district: "4th Congressional District",
-    founded: 1907,
+    founded: "1878 (reinstated 1907)",
     founder: "Separated from Macabebe under Act of the Philippine Commission",
     areaKm2: 48.25,
     population: 57533,
@@ -451,7 +451,7 @@ export const CITIES_AND_MUNICIPALITIES = [
     zipCode: "2017",
     patronSaint: "Saint Michael the Archangel",
     fiestaDate: "May 8 & September 29 (Feast of St. Michael)",
-    overview: "Masantol sits at the southern tip of Pampanga where the Pampanga Delta branches out into Manila Bay. Known for its prolific riverine aquaculture, Masantol yields sweet saltwater prawns, oysters, and milkfish. Its residents hold a deep spiritual devotion to St. Michael the Archangel.",
+    overview: "Masantol sits at the southern tip of Pampanga where the Pampanga Delta branches out into Manila Bay. Inaugurated as San Miguel de Masantol on May 1, 1878, it was briefly re-annexed to Macabebe in 1904 and reinstated as an independent municipality in 1907. Known for its prolific riverine aquaculture, Masantol yields sweet saltwater prawns, oysters, and milkfish. Its residents hold a deep spiritual devotion to St. Michael the Archangel.",
     claimToFame: "Premier aquaculture hub for bangus, tiger prawns, and oysters; distinct riverine island villages.",
     foodSpecialty: "Fresh Prawns in Garlic Butter, Kinilaw na Bangus, Oysters, Begukan Tilapia",
     topSpots: ["Saint Michael the Archangel Parish Church", "Pampanga Delta River Cruise Outposts", "Coastal Fish Hatcheries"],
@@ -471,7 +471,7 @@ export const CITIES_AND_MUNICIPALITIES = [
     isCapital: false,
     tagline: "The Western Agro-Industrial Hub & Mountain Vista",
     district: "2nd Congressional District",
-    founded: 1879,
+    founded: "1867",
     founder: "Named in honor of the Count of Floridablanca (Don José Moñino)",
     areaKm2: 175.48,
     population: 135907,
@@ -479,7 +479,7 @@ export const CITIES_AND_MUNICIPALITIES = [
     zipCode: "2006",
     patronSaint: "Saint Joseph the Worker",
     fiestaDate: "May 1 (Feast of Saint Joseph the Worker)",
-    overview: "Spanning the scenic western ridge of Pampanga, Floridablanca is home to Basa Air Base (the Philippine Air Force's premier fighter jet air base) and the ancestral highland communities of the Aeta in Nabuclod. It is an agricultural giant rich in sugarcane, rice, and eco-mountain tourism.",
+    overview: "Spanning the scenic western ridge of Pampanga, Floridablanca was established as a settlement in 1823 and officially founded as Pueblo de Floridablanca on April 30, 1867. Home to Basa Air Base (the Philippine Air Force's premier fighter jet air base) and the ancestral highland communities of the Aeta in Nabuclod, it is an agricultural giant rich in sugarcane, rice, and eco-mountain tourism.",
     claimToFame: "Basa Air Base (Philippine Air Force), Nabuclod Mountain Ecopark, and panoramic view of the Zambales Mountain Range.",
     foodSpecialty: "Sugarcane Sweets, Native Pork Barbeque, Kalderetang Kambing, Suman Kalabasa",
     topSpots: ["Basa Air Base & Aviation Heritage", "Nabuclod Mountain Trails and Cable Car Viewpoint", "Saint Joseph the Worker Parish Church"],
@@ -521,7 +521,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "san-luis",
     name: "San Luis",
-    type: "Municipality (4th Class)",
+    type: "Municipality (2nd Class)",
     isCapital: false,
     tagline: "The Peaceful Riverine Sanctuary of Central Pampanga",
     district: "4th Congressional District",
@@ -547,7 +547,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "san-simon",
     name: "San Simon",
-    type: "Municipality (3rd Class)",
+    type: "Municipality (1st Class)",
     isCapital: false,
     tagline: "The Steel & Industrial Corridor of Eastern Pampanga",
     district: "4th Congressional District",
@@ -572,7 +572,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "santa-ana",
     name: "Santa Ana",
-    type: "Municipality (3rd Class)",
+    type: "Municipality (1st Class)",
     isCapital: false,
     tagline: "The Heritage Gateway to Mount Arayat",
     district: "3rd Congressional District",
@@ -597,7 +597,7 @@ export const CITIES_AND_MUNICIPALITIES = [
   {
     id: "santo-tomas",
     name: "Santo Tomas",
-    type: "Municipality (4th Class)",
+    type: "Municipality (2nd Class)",
     isCapital: false,
     tagline: "The Coffin Capital of the Philippines & Potter's Craft",
     district: "4th Congressional District",
@@ -720,7 +720,7 @@ export const CULINARY_SPECIALTIES = [
   {
     id: "kamaru",
     name: "Crispy Kamaru (Mole Crickets)",
-    town: "Magalang & Porac",
+    town: "Mabalacat City, Magalang & Porac",
     tag: "Exotic",
     category: "Wild Delicacy & Adventure Food",
     isHeritage: true,
@@ -738,7 +738,7 @@ export const CULINARY_SPECIALTIES = [
     isHeritage: true,
     history: "While Tagalog morcon is a rolled beef flank steak, traditional Morcon Kapampangan is a steamed roll of ground pork and carabao meat (damulag) wrapped in caul fat (panna/chapa), packed with chorizo, eggs, raisins, and cheese, then fried crisp and served with rich natural pan drippings.",
     ingredients: ["Ground carabao meat / premium pork", "Pig caul fat (chapa wrapper)", "Chorizo de Bilbao", "Grated queso de bola", "Hard-boiled eggs and sweet raisins", "Spiced liver gravy"],
-    whereToTry: "Everybody's Cafe (San Fernando), Bale Dutung by Claude Tayag, Aling Lucing Heritage Hall",
+    whereToTry: "Everybody's Cafe (San Fernando), Bale Dutung by Claude Tayag (Angeles City)",
     funFact: "Wrapping the meat roll in delicate caul fat instead of aluminum foil allows natural basting that keeps the meat moist and gelatinous."
   },
   {
@@ -762,7 +762,7 @@ export const CULINARY_SPECIALTIES = [
     isHeritage: true,
     history: "Brought by Augustinian friars in honor of Saint Nicholas of Tolentino, patron saint of the poor and sick. When colonial Spanish builders used thousands of egg whites to bind limestone mortars for stone churches, the nuns and local bakers took the surplus egg yolks to craft these buttery arrowroot cookies stamped with heirloom wooden molds depicting the saint.",
     ingredients: ["Arrowroot flour (uraro)", "Fresh egg yolks", "Pure coconut cream (gata)", "Dayap lime zest", "Sugar and melted butter"],
-    whereToTry: "Atching Lillian Borromeo (Bale Kusina, Mexico, Pampanga), San Guillermo Parish Gift Shop",
+    whereToTry: "Kusina ni Atching Lillian (Mexico), San Guillermo Parish Gift Shop",
     funFact: "Food historian Atching Lillian Borromeo still stamps each cookie by hand using hand-carved mahogany molds that are over 250 years old!"
   }
 ];
@@ -775,7 +775,7 @@ export const HISTORIC_CHURCHES = [
     town: "Bacolor",
     yearFounded: 1576,
     architecturalStyle: "Baroque with Lahar Adaptations",
-    heritageStatus: "National Historical Landmark",
+    heritageStatus: "National Cultural Treasure & National Historical Landmark",
     feastDay: "February 10 (San Guillermo Ermitaño)",
     description: "One of the most dramatic testaments to Filipino faith and resilience. Originally constructed in 1576 by Augustinian friars, this massive 12-meter-tall Baroque brick church was engulfed in 1991 and 1995 by massive lahar flows from Mount Pinatubo that buried the town of Bacolor. Instead of abandoning the shrine, Bacoloreños excavated the upper half: what used to be the second-story windows were converted into the main entrance doors, and the original ornate gilded wooden retablo was carefully raised to the new ceiling level.",
     keyFeatures: [
@@ -798,11 +798,11 @@ export const HISTORIC_CHURCHES = [
     name: "Saint James the Apostle Parish Church",
     popularName: "The Sistine Chapel of the Philippines",
     town: "Betis, Guagua",
-    yearFounded: 1607,
+    yearFounded: "1607 (parish) / 1770 (current baroque church)",
     architecturalStyle: "Spanish Baroque with Classical Revival Murals",
     heritageStatus: "National Cultural Treasure (Declared 2001)",
     feastDay: "July 25 (Saint James the Greater)",
-    description: "Revered as the crown jewel of religious art in the archipelago, Betis Church is celebrated as the 'Sistine Chapel of the Philippines'. The entire interior ceiling is a monumental canvas of trompe l'œil frescoes and oil-on-canvas paintings depicting biblical narratives, created by master painters Macario Ligon and Simon Flores. The town's legendary mandukit (woodcarvers) adorned every altar, choir stall, and confessional with jaw-dropping openwork relief.",
+    description: "Revered as the crown jewel of religious art in the archipelago, Betis Church is celebrated as the 'Sistine Chapel of the Philippines'. The entire interior ceiling is a monumental canvas of trompe l'œil frescoes depicting biblical narratives originally painted on the ceiling by Mariano Henson (1890, 1895), repainted by Macario Ligon (1939), and restored by Ligon's nephew Victor Ramos (1972–1985), alongside the famous Sagrada Familia easel painting by 19th-century master Simon Flores. The town's legendary mandukit (woodcarvers) adorned every altar, choir stall, and confessional with jaw-dropping openwork relief.",
     keyFeatures: [
       "Monumental ceiling murals depicting the Holy Family, Apostles, and Heaven",
       "Intricately carved gilded main retablo (altar reredos) with multi-tiered niches",
@@ -820,14 +820,14 @@ export const HISTORIC_CHURCHES = [
   },
   {
     id: "holy-rosary-angeles",
-    name: "Holy Rosary Parish Church",
+    name: "Minor Basilica and Parish of Our Lady of the Most Holy Rosary (Holy Rosary Parish Church)",
     popularName: "Pisamban Maragul (The Big Church)",
     town: "Santo Rosario, Angeles City",
     yearFounded: 1877,
     architecturalStyle: "Romanesque-Baroque with Twin Belfries",
-    heritageStatus: "National Historical Site (NHCP)",
+    heritageStatus: "Minor Basilica • Important Cultural Property (National Museum) & National Historical Site (NHCP)",
     feastDay: "Second Sunday of October (La Naval) & Last Sunday of October",
-    description: "Standing majestically in the heart of Angeles City's historic heritage district, Pisamban Maragul was built through the polo y servicio forced labor system from 1877 to 1896 under Augustinian friars. During the Philippine-American War in 1899, it served as a military hospital for the US Army. During World War II, the Japanese Imperial Forces used its belfries as lookout towers. Today, its iconic twin bell towers remain the spiritual beacon of Angeles.",
+    description: "Standing majestically in the heart of Angeles City's historic heritage district, this venerable sanctuary was constructed via polo y servicio forced labor starting in 1877 (first mass held in 1896) and completed in October 1909 under Augustinian friars. Elevated by the Vatican as Pampanga's first Minor Basilica in 2026, it served as a military hospital for the US Army during the Philippine-American War in 1899 and as a lookout garrison during World War II. Today, its iconic twin bell towers remain the spiritual beacon of Angeles.",
     keyFeatures: [
       "Iconic twin symmetrical bell towers with copper weather vanes",
       "Cruciform layout with antique hand-carved mahogany ceiling beams",
@@ -876,7 +876,7 @@ export const HISTORIC_CHURCHES = [
     architecturalStyle: "Neo-Classic Renaissance with Brick Masonry",
     heritageStatus: "Important Cultural Property (National Museum)",
     feastDay: "August 28 (San Agustin)",
-    description: "Founded in 1572 by Fray Martin de Goiti and Augustinian missionaries, Lubao Church is the oldest Catholic foundation in Pampanga and one of the oldest in the Philippines. Built using clay bricks, lime, and egg whites, its thick 2.5-meter fortress walls were designed to withstand catastrophic earthquakes, floods, and Dutch pirate incursions. The five-tier hexagonal brick bell tower is an architectural masterpiece of colonial defense engineering.",
+    description: "Founded in 1572 by Augustinian friar Fr. Juan Gallegos following Spanish commander Martín de Goiti's expedition. Lubao Church is the oldest Catholic foundation in Pampanga and one of the oldest in the Philippines. Built using clay bricks, lime, and egg whites, its thick 2.5-meter fortress walls were designed to withstand catastrophic earthquakes, floods, and Dutch pirate incursions. The five-tier hexagonal brick bell tower is an architectural masterpiece of colonial defense engineering.",
     keyFeatures: [
       "Immense five-story octagonal brick belfry constructed in 1638",
       "Massive exposed red-brick walls and buttresses surviving four centuries of tremors",
@@ -923,7 +923,7 @@ export const HISTORIC_CHURCHES = [
     yearFounded: 1597,
     architecturalStyle: "Neoclassical Revival",
     heritageStatus: "Diocesan Shrine",
-    feastDay: "June 28-30 (Libad Fluvial Festival of Apung Iru)",
+    feastDay: "June 28–30 (Apung Iru Fluvial Fiesta)",
     description: "Overlooking the meandering Rio Grande de Pampanga, Apalit Church is home to the ivory icon of Saint Peter, endearingly addressed as 'Apung Iru'. Built in the 1870s under Augustinian friar Antonio Carrillo with stones quarried from Meycauayan, it serves as the focal departure point for the legendary three-day Libad fluvial procession on the river.",
     keyFeatures: [
       "Neoclassical twin bell towers and pediment with intricate friezes",
@@ -935,20 +935,20 @@ export const HISTORIC_CHURCHES = [
       "Strict modesty dress code enforced.",
       "Follow water safety guidelines if observing the Libad fluvial parade from the riverbank."
     ],
-    coordinates: "14.9575° N, 120.7578° E",
-    massSchedule: "Daily: 6:00 AM & 5:30 PM | Sundays: 6:00 AM, 7:30 AM, 9:00 AM, 10:30 AM, 5:00 PM, 6:30 PM"
+    coordinates: "14.9497° N, 120.7586° E",
+    massSchedule: "Daily: 6:00 AM & 5:30 PM | Sundays: 6:00 AM, 8:00 AM, 9:30 AM, 5:00 PM"
   }
 ];
 
 export const TOURIST_SPOTS = [
   {
     id: "mount-arayat-national-park",
-    name: "Mount Arayat National Park & Hiking Trails",
+    name: "Mount Arayat Protected Landscape & Hiking Trails",
     category: "Nature & Eco-Adventure",
     location: "Arayat & Magalang",
     bestTime: "October to April (Dry Season)",
     fee: "₱50 entrance fee; guide fees ₱800 - ₱1,500 depending on peak trail",
-    description: "The mystical lone sentinel of Central Luzon rising 1,026 meters above sea level. Steeped in folklore as the mythical kingdom of Maria Sinukuan, Mount Arayat features dense rainforests, natural freshwater spring pools at its base, and exhilarating trekking routes such as the Pinnacle Peak trail and the North-to-South Peak traverse offering panoramic views of the Pampanga River and Sierra Madre mountains.",
+    description: "The mystical lone sentinel of Central Luzon rising 1,026 meters above sea level, officially proclaimed a Protected Landscape in April 2022 under the Expanded NIPAS Act. Steeped in folklore as the mythical kingdom of Maria Sinukuan, Mount Arayat features dense rainforests, natural freshwater spring pools at its base, and exhilarating trekking routes such as the Pinnacle Peak trail and the North-to-South Peak traverse offering panoramic views of the Pampanga River and Sierra Madre mountains.",
     highlights: ["Pinnacle Rock viewpoint", "Natural spring water swimming pools at the base", "Diverse birdlife and indigenous flora", "Legendary Maria Sinukuan cave outposts"],
     visitorTips: "Hire registered local guides at the Magalang or Arayat DENR stations. Bring at least 2 liters of water, wear non-slip trail shoes, and adhere strictly to Leave No Trace principles."
   },
@@ -1022,10 +1022,10 @@ export const TOURIST_SPOTS = [
     id: "pamintuan-mansion",
     name: "Pamintuan Mansion (Museum of Philippine Social History)",
     category: "Heritage & History",
-    location: "Miranda St, Santo Rosario, Angeles City",
+    location: "Santo Entierro St. cor. Miranda St., Santo Rosario, Angeles City",
     bestTime: "Tuesday to Sunday (9:00 AM - 4:00 PM)",
     fee: "Free admission",
-    description: "Built in the 1880s by Don Mariano Pamintuan, this grand bahay-na-bato witnessed major turning points of the nation. It briefly served as the seat of the First Philippine Republic under General Emilio Aguinaldo, where the first anniversary of Philippine Independence was celebrated on June 12, 1899. Later used by General Arthur MacArthur and Japanese forces, it now houses the NHCP Museum of Philippine Social History.",
+    description: "Grand 1890 residence built by Don Mariano Pamintuan and Valentina Torres that served as presidential headquarters of the First Philippine Republic, where the first anniversary of Philippine Independence was celebrated on June 12, 1899. Later used by General Arthur MacArthur and Japanese forces, it now houses the NHCP Museum of Philippine Social History.",
     highlights: ["Preserved 19th-century Kapampangan architectural grandeur and high ceilings", "Interactive galleries chronicling Filipino clothing, music, games, and culinary evolution", "Historic balcony where Aguinaldo and his cabinet reviewed the troops", "Colonial water cistern and secret wartime passages"],
     visitorTips: "Combine this with visits to the nearby Holy Rosary Church and Bale Herencia for a comprehensive heritage walking tour."
   }

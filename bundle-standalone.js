@@ -14,31 +14,33 @@ mainJs = mainJs.replace(/import\s*\{[^}]*\}\s*from\s*['"][^'"]+['"];?/, '// Data
 // Encode favicon as base64 data URI
 const faviconDataUri = `data:image/svg+xml;base64,${Buffer.from(faviconSvg).toString('base64')}`;
 
-// Replace external CSS link with inline <style>
-html = html.replace(
-  '<link rel="stylesheet" href="/src/styles/main.css">',
-  `<style>\n${css}\n</style>`
-);
+// Replace external CSS link with inline <style> if present
+if (html.includes('<link rel="stylesheet" href="/src/styles/main.css">')) {
+  html = html.replace(
+    '<link rel="stylesheet" href="/src/styles/main.css">',
+    `<style>\n${css}\n</style>`
+  );
+}
 
-// Replace favicon with data URI + fallback
-html = html.replace(
-  '<link rel="icon" type="image/svg+xml" href="/favicon.svg">',
-  `<link rel="icon" type="image/svg+xml" href="${faviconDataUri}">`
-);
+// Replace favicon with data URI if external href present
+if (html.includes('<link rel="icon" type="image/svg+xml" href="/favicon.svg">')) {
+  html = html.replace(
+    '<link rel="icon" type="image/svg+xml" href="/favicon.svg">',
+    `<link rel="icon" type="image/svg+xml" href="${faviconDataUri}">`
+  );
+}
 
-// Replace footer img with inline SVG
-const footerInlineLogo = logoSvg.replace('width="100%" height="100%"', 'class="w-full h-full object-contain"');
-html = html.replace(
-  '<img src="/logo-arayat.svg" alt="I Love Pampanga Logo" class="w-full h-full object-contain">',
-  footerInlineLogo
-);
-
-// Replace script module tag with inline script containing dataJs and mainJs
-html = html.replace(
-  '<script type="module" src="/src/main.js"></script>',
-  `<script>\n/* --- PAMPANGA VERIFIED DATA --- */\n${dataJs}\n\n/* --- APPLICATION CONTROLLER --- */\n${mainJs}\n</script>`
-);
+// Replace script tag with inline script containing dataJs and mainJs
+const inlineScriptRegex = /<script>\s*\/\* --- PAMPANGA VERIFIED DATA --- \*\/[\s\S]*?<\/script>/;
+if (inlineScriptRegex.test(html)) {
+  html = html.replace(inlineScriptRegex, `<script>\n/* --- PAMPANGA VERIFIED DATA --- */\n${dataJs}\n\n/* --- APPLICATION CONTROLLER --- */\n${mainJs}\n</script>`);
+} else {
+  html = html.replace(
+    '<script type="module" src="/src/main.js"></script>',
+    `<script>\n/* --- PAMPANGA VERIFIED DATA --- */\n${dataJs}\n\n/* --- APPLICATION CONTROLLER --- */\n${mainJs}\n</script>`
+  );
+}
 
 fs.writeFileSync('index.html', html, 'utf8');
-console.log('Successfully created 100% self-contained standalone index.html!');
+console.log('Successfully updated 100% self-contained standalone index.html!');
 console.log('Final index.html size:', (fs.statSync('index.html').size / 1024).toFixed(1), 'KB');

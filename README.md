@@ -55,22 +55,22 @@
 - Deep architectural profiles of Pampanga’s colonial churches:
   - **San Guillermo Parish Church (Bacolor):** The world-famous "Sunken Church" half-buried by the 1991 Mt. Pinatubo lahar.
   - **Betis Church / St. James the Apostle (Guagua):** The "Sistine Chapel of the Philippines" with monumental ceiling frescoes.
-  - **Holy Rosary Parish Church / Pisamban Maragul (Angeles City):** Twin-bell towers and Philippine-American War military hospital history.
+  - **Holy Rosary Parish Church (Santo Rosario, Angeles City):** Minor Basilica of Our Lady of the Most Holy Rosary, with twin-bell towers, 1909 completion, and wartime history.
   - **Metropolitan Cathedral of San Fernando:** Seat of the Archdiocese and historical site of revolutionary history.
-  - **St. Augustine Parish Church (Lubao):** Oldest brick church in Pampanga (founded 1572).
+  - **St. Augustine Parish Church (Lubao):** Oldest brick church in Pampanga (founded 1572 by Fr. Juan Gallegos).
   - **Santa Monica Parish Church (Minalin):** Unique floral baroque facade and Moorish spires.
   - **St. Peter the Apostle Parish Church (Apalit):** Shrine of *Apung Iru* and the annual Libad fluvial river parade.
 - **"Visitor Guide"** modal covering architectural styles, key features, mass schedules, GPS coordinates, and pilgrim etiquette (dress code, photography rules).
 
 ### 5. Tourist Spots & Famous Destinations
-- **Mount Arayat National Park:** Hiking trails (Pinnacle Rock, South Peak), freshwater spring pools, and the legend of Mariang Sinukuan.
+- **Mount Arayat Protected Landscape:** Hiking trails (Pinnacle Rock, South Peak), freshwater spring pools, and the legend of Mariang Sinukuan (proclaimed a Protected Landscape in April 2022).
 - **Giant Lantern Festival (Ligligan Parul):** Asia's Christmas capital showcasing 20-foot light-synchronized kaleidoscopic lanterns.
 - **Clark Freeport Zone:** Clark Museum & 4D Theater, Parade Grounds, and former US Air Force base heritage.
 - **Aqua Planet:** 10-hectare premier water theme park with 38+ rides.
 - **Candaba Swamp & Wild Bird Sanctuary:** Ramsar-level seasonal flyway for over 100,000 migratory waterfowl from Siberia and Japan.
 - **SandBox at Alviera (Porac):** Outdoor adventure park with the Philippines' first roller coaster zipline and giant swing.
 - **Puning Hot Springs & Volcanic Sand Spa:** Thermal mineral pools and heated volcanic sand therapy deep in the Pinatubo lahar canyon.
-- **Pamintuan Mansion:** Museum of Philippine Social History in Angeles City.
+- **Pamintuan Mansion:** Museum of Philippine Social History (Santo Entierro St. cor. Miranda St., Angeles City).
 
 ### 6. Interactive Kapampangan Phrasebook & Audio Pronunciation
 - Features 10 everyday Kapampangan greetings and foodie expressions (*Mayap a abak*, *Manyaman!*, *Mangan tana!*, *Dacal a salamat*).
