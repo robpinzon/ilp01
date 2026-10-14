@@ -1,164 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 90" width="100%" height="100%">
   <defs>
     <!-- Terracotta Gradient -->
-    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="brandTerracotta" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#E56A44"/>
       <stop offset="50%" stop-color="#C85A32"/>
-      <stop offset="100%" stop-color="#9C3B1A"/>
+      <stop offset="100%" stop-color="#9E3C1A"/>
     </linearGradient>
 
-    <!-- Deep Arayat Forest Gradient -->
-    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2D6A50"/>
-      <stop offset="60%" stop-color="#1E4D3B"/>
-      <stop offset="100%" stop-color="#123528"/>
+    <!-- Deep Forest Gradient -->
+    <linearGradient id="brandForest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4D3B"/>
+      <stop offset="100%" stop-color="#123326"/>
     </linearGradient>
 
     <!-- Golden Sun Gradient -->
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="brandSun" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FCD34D"/>
-      <stop offset="50%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
     </linearGradient>
-
-    <!-- River Curve Gradient -->
-    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.7"/>
-    </linearGradient>
-
-    <!-- Soft Drop Shadow -->
-    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" flood-color="#000000"/>
-    </filter>
   </defs>
 
-  <!-- LOGO EMBLEM ICON (Left side: 140x140 area) -->
-  <g transform="translate(15, 10)">
-    <!-- Circular Shield Base -->
-    <circle cx="70" cy="70" r="66" fill="#FBF8F3" stroke="#E6DFD5" stroke-width="2"/>
-    <circle cx="70" cy="70" r="62" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <!-- Modern Emblem Mark (Left: 70x70) -->
+  <g transform="translate(10, 10)">
+    <!-- Rounded Squircle Badge -->
+    <rect width="70" height="70" rx="20" fill="url(#brandForest)"/>
+    <rect x="1.5" y="1.5" width="67" height="67" rx="18.5" fill="none" stroke="#E5A93C" stroke-width="1.5" stroke-opacity="0.4"/>
 
-    <!-- Rising Sun over Arayat -->
-    <g transform="translate(70, 68)">
-      <!-- Sun Rays -->
-      <path d="M 0,-48 L 0,-38 M 34,-34 L 27,-27 M 48,0 L 38,0 M 34,34 L 27,27 M 0,48 L 0,38 M -34,34 L -27,27 M -48,0 L -38,0 M -34,-34 L -27,-27" 
-            stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
-      <!-- Sun Disc -->
-      <circle cx="0" cy="-6" r="24" fill="url(#goldGrad)" opacity="0.95"/>
-    </g>
+    <!-- Rising Sun over Arayat Peaks -->
+    <circle cx="35" cy="26" r="11" fill="url(#brandSun)"/>
 
-    <!-- Iconic Silhouette of Mount Arayat (Solitary volcanic peak with signature ridges) -->
-    <!-- Rear Ridge -->
-    <path d="M 12 108 
-             Q 35 88 52 70 
-             Q 66 52 70 48 
-             Q 76 54 88 72 
-             Q 106 90 128 108 
-             Z" 
-          fill="#164332" opacity="0.45"/>
+    <!-- Mount Arayat Peak Silhouette (Twin Peaks) -->
+    <path d="M 8 56 L 25 30 L 32 40 L 41 26 L 62 56 Z" fill="#FAF8F5"/>
+    <!-- Subtle Mountain Shadow Layer -->
+    <path d="M 25 30 L 32 40 L 41 26 L 62 56 L 35 56 Z" fill="#E6DFD5" opacity="0.6"/>
 
-    <!-- Main Mount Arayat Silhouette -->
-    <path d="M 14 116 
-             C 32 104, 46 86, 62 62 
-             C 66 56, 69 52, 72 52 
-             C 75 52, 78 56, 82 64 
-             C 96 86, 110 104, 126 116 
-             Z" 
-          fill="url(#forestGrad)" filter="url(#softShadow)"/>
-
-    <!-- Arayat South Peak Ridge Highlight -->
-    <path d="M 72 52 
-             C 74 65, 78 82, 85 102 
-             C 88 108, 92 114, 96 116 
-             C 110 104, 120 92, 126 116 
-             Z" 
-          fill="#133829" opacity="0.35"/>
-
-    <!-- Rio Grande de Pampanga River Waves -->
-    <path d="M 18 114 
-             C 38 108, 56 122, 74 114 
-             C 92 106, 108 120, 122 114 
-             L 122 126 
-             C 108 128, 92 118, 74 124 
-             C 56 130, 38 118, 18 124 
-             Z" 
-          fill="url(#riverGrad)"/>
-
-    <!-- Subtle Golden Heart Accent (Symbolizing 'I Love') -->
-    <g transform="translate(70, 96) scale(0.65)">
-      <path d="M 0, -6 
-               C -5, -13 -14, -10 -14, -3 
-               C -14, 5 -3, 10 0, 14 
-               C 3, 10 14, 5 14, -3 
-               C 14, -10 5, -13 0, -6 Z" 
-            fill="url(#terracottaGrad)" stroke="#FFFFFF" stroke-width="1.5" filter="url(#softShadow)"/>
-    </g>
-
-    <!-- Golden Stars (Kapampangan Excellence) -->
-    <polygon points="32,44 34,48 38,48 35,51 36,55 32,53 28,55 29,51 26,48 30,48" fill="#F59E0B"/>
-    <polygon points="108,44 110,48 114,48 111,51 112,55 108,53 104,55 105,51 102,48 106,48" fill="#F59E0B"/>
+    <!-- Terracotta Heart Emblem -->
+    <path d="M 35 44 C 33.5 40.5 28.5 40.5 28.5 44.5 C 28.5 48.5 35 53 35 53 C 35 53 41.5 48.5 41.5 44.5 C 41.5 40.5 36.5 40.5 35 44 Z" 
+          fill="url(#brandTerracotta)"/>
   </g>
 
-  <!-- TYPOGRAPHY SECTION (Right side) -->
-  <g transform="translate(170, 0)">
-    <!-- Small Top Kicker -->
-    <text x="0" y="44" 
-          font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
-          font-size="12" 
-          font-weight="700" 
-          letter-spacing="4" 
-          fill="#C85A32" 
-          text-transform="uppercase">
-      PROVINCE OF CULINARY HERITAGE
+  <!-- Modern Typography (Right: X=95) -->
+  <g transform="translate(96, 20)">
+    <!-- Brand Title: I Love Pampanga -->
+    <text x="0" y="32" 
+          font-family="'Playfair Display', Georgia, serif" 
+          font-size="30" 
+          font-weight="800" 
+          letter-spacing="-0.5" 
+          fill="#1E4D3B">
+      I Love <tspan fill="#C85A32">Pampanga</tspan>
     </text>
 
-    <!-- Main Brand Name: I LOVE PAMPANGA -->
-    <g transform="translate(0, 88)">
-      <!-- 'I' -->
-      <text x="0" y="0" 
-            font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
-            font-size="44" 
-            font-weight="900" 
-            letter-spacing="-1" 
-            fill="#1E4D3B">
-        I
-      </text>
-
-      <!-- Vibrant Heart -->
-      <g transform="translate(26, -20) scale(0.95)">
-        <path d="M 12, 4 
-                 C 8, -3 -1, -2 -1, 6 
-                 C -1, 14 8, 20 12, 24 
-                 C 16, 20 25, 14 25, 6 
-                 C 25, -2 16, -3 12, 4 Z" 
-              fill="url(#terracottaGrad)"/>
-      </g>
-
-      <!-- 'PAMPANGA' -->
-      <text x="64" y="0" 
-            font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
-            font-size="44" 
-            font-weight="900" 
-            letter-spacing="0.5" 
-            fill="#1E4D3B">
-        PAMPANGA
-      </text>
-    </g>
-
-    <!-- Subtitle / Tagline -->
-    <g transform="translate(2, 116)">
-      <text x="0" y="0" 
-            font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
-            font-size="12.5" 
-            font-weight="600" 
-            letter-spacing="1.5" 
-            fill="#6B7280">
-        CULINARY &amp; HERITAGE CAPITAL OF THE PHILIPPINES
-      </text>
-      <!-- Elegant Gold Accent Line -->
-      <line x1="0" y1="12" x2="340" y2="12" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
-    </g>
+    <!-- Brand Tagline -->
+    <text x="1" y="52" 
+          font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
+          font-size="9.5" 
+          font-weight="700" 
+          letter-spacing="2" 
+          fill="#78716C" 
+          text-transform="uppercase">
+      Culinary &amp; Heritage Capital of the Philippines
+    </text>
   </g>
 </svg>

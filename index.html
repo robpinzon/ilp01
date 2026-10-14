@@ -266,76 +266,55 @@ body {
        STICKY RESPONSIVE NAVBAR
        ====================================================================== -->
   <header id="navbar" class="navbar-glass sticky top-0 z-40 w-full transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
       
-      <!-- Brand Logo Component -->
-      <a href="#" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-emerald-700 rounded-xl p-1">
-        <!-- SVG Vector Mount Arayat Logo Component -->
-        <div class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 transition-transform duration-300 group-hover:scale-105">
-          <svg viewBox="0 0 140 140" class="w-full h-full drop-shadow-sm">
-            <defs>
-              <linearGradient id="navSun" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#FCD34D"/>
-                <stop offset="100%" stop-color="#F59E0B"/>
-              </linearGradient>
-              <linearGradient id="navMountain" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#2D6A50"/>
-                <stop offset="60%" stop-color="#1E4D3B"/>
-                <stop offset="100%" stop-color="#123528"/>
-              </linearGradient>
-              <linearGradient id="navHeart" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#E56A44"/>
-                <stop offset="100%" stop-color="#B84A2A"/>
-              </linearGradient>
-            </defs>
-            <circle cx="70" cy="70" r="66" fill="#FAF7F2" stroke="#E6DFD5" stroke-width="2"/>
-            <circle cx="70" cy="70" r="62" fill="none" stroke="#E5A93C" stroke-width="1.5" stroke-dasharray="3,3"/>
-            <!-- Sun Rays & Disc -->
-            <circle cx="70" cy="56" r="22" fill="url(#navSun)"/>
-            <!-- Mount Arayat Twin-Shoulder Silhouette -->
-            <path d="M 16 110 C 34 96, 48 76, 64 56 C 68 50, 72 48, 76 50 C 82 56, 94 78, 108 96 C 116 104, 122 108, 126 112 Z" fill="url(#navMountain)"/>
-            <!-- Rio Grande de Pampanga River Waves -->
-            <path d="M 18 112 C 38 106, 56 120, 74 112 C 92 104, 108 118, 122 112 L 122 122 C 108 124, 92 114, 74 120 C 56 126, 38 114, 18 120 Z" fill="#0284C7"/>
-            <!-- Heart Badge in center -->
-            <path d="M 70 88 C 66 80, 54 81, 54 88 C 54 96, 66 102, 70 106 C 74 102, 86 96, 86 88 C 86 81, 74 80, 70 88 Z" fill="url(#navHeart)" stroke="#FFFFFF" stroke-width="1.5"/>
+      <!-- Sleek Modern Brand Logo -->
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group focus:outline-none shrink-0" aria-label="I Love Pampanga Home">
+        <!-- Mountain Peak Squircle Badge -->
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-950 p-1.5 shadow-sm group-hover:scale-105 group-hover:shadow transition-all flex items-center justify-center border border-amber-400/30 shrink-0">
+          <svg viewBox="0 0 64 64" class="w-full h-full" fill="none">
+            <circle cx="32" cy="24" r="10" fill="#F59E0B"/>
+            <path d="M 8 51 L 23 27 L 30 36 L 38 23 L 56 51 Z" fill="#FAF8F5"/>
+            <path d="M 23 27 L 30 36 L 38 23 L 56 51 L 32 51 Z" fill="#E6DFD5" opacity="0.6"/>
+            <path d="M 32 40 C 30.5 37 26 37 26 40.5 C 26 44 32 48 32 48 C 32 48 38 44 38 40.5 C 38 37 33.5 37 32 40 Z" fill="#C85A32"/>
           </svg>
         </div>
         
         <div class="flex flex-col">
-          <div class="flex items-center gap-1.5 leading-none">
-            <span class="text-xs font-bold uppercase tracking-widest text-amber-700 font-sans">Kapampangan Pride</span>
-          </div>
-          <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-emerald-950 font-serif leading-tight">
+          <span class="text-lg sm:text-xl font-extrabold tracking-tight text-emerald-950 font-serif leading-none">
             I Love <span class="text-terracotta">Pampanga</span>
           </span>
-          <span class="text-[10px] text-stone-500 font-medium tracking-wide">ilovepampanga.com</span>
+          <span class="text-[9px] sm:text-[10px] text-stone-500 font-semibold tracking-wider uppercase mt-1">
+            Culinary &amp; Heritage Capital
+          </span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-7 text-xs sm:text-sm font-semibold text-stone-700">
         <a href="#cities" class="hover:text-emerald-800 transition py-1 border-b-2 border-transparent hover:border-emerald-800">Cities &amp; Towns</a>
         <a href="#culinary" class="hover:text-amber-800 transition py-1 border-b-2 border-transparent hover:border-amber-800">Culinary Capital</a>
         <a href="#churches" class="hover:text-emerald-800 transition py-1 border-b-2 border-transparent hover:border-emerald-800">Colonial Churches</a>
         <a href="#attractions" class="hover:text-amber-800 transition py-1 border-b-2 border-transparent hover:border-amber-800">Attractions</a>
-        <a href="#culture" class="hover:text-emerald-800 transition py-1 border-b-2 border-transparent hover:border-emerald-800">Language &amp; Quiz</a>
+        <a href="#culture" class="hover:text-emerald-800 transition py-1 border-b-2 border-transparent hover:border-emerald-800">Phrases &amp; Quiz</a>
       </nav>
 
       <!-- Desktop Search & Action -->
-      <div class="hidden sm:flex items-center gap-3">
+      <div class="hidden md:flex items-center gap-2 sm:gap-3 shrink-0">
         <button 
           type="button" 
-          class="open-search-modal-trigger inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-stone-100 hover:bg-stone-200/80 text-stone-600 text-xs font-medium border border-stone-200 transition"
+          class="open-search-modal-trigger inline-flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-stone-100 hover:bg-stone-200/80 text-stone-600 text-xs font-medium border border-stone-200 transition"
           aria-label="Open Global Search">
           <svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          <span>Search towns, food, churches...</span>
+          <span class="hidden xl:inline">Search towns, food, churches...</span>
+          <span class="xl:hidden">Search</span>
           <kbd class="font-mono bg-white text-stone-500 px-1.5 py-0.5 rounded text-[10px] border border-stone-300">Ctrl K</kbd>
         </button>
 
         <a 
           href="#cities" 
-          class="px-4 py-2 rounded-2xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold transition shadow-sm hover:shadow">
-          Explore Directory
+          class="px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold transition shadow-sm hover:shadow whitespace-nowrap">
+          Explore LGUs
         </a>
       </div>
 
@@ -364,7 +343,14 @@ body {
     <div class="w-4/5 max-w-sm bg-white h-full shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
       <div>
         <div class="flex items-center justify-between pb-6 border-b border-stone-100">
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-emerald-900 p-1 flex items-center justify-center shrink-0">
+              <svg viewBox="0 0 64 64" class="w-full h-full" fill="none">
+                <circle cx="32" cy="24" r="10" fill="#F59E0B"/>
+                <path d="M 8 51 L 23 27 L 30 36 L 38 23 L 56 51 Z" fill="#FAF8F5"/>
+                <path d="M 32 40 C 30.5 37 26 37 26 40.5 C 26 44 32 48 32 48 C 32 48 38 44 38 40.5 C 38 37 33.5 37 32 40 Z" fill="#C85A32"/>
+              </svg>
+            </div>
             <span class="text-lg font-bold font-serif text-emerald-900">I Love Pampanga</span>
           </div>
           <button id="close-drawer-btn" class="p-2 text-stone-400 hover:text-stone-700 rounded-lg">
@@ -796,176 +782,17 @@ body {
         <!-- Col 1: Brand Info -->
         <div class="md:col-span-2 space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-12 h-12">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" class="w-full h-full object-contain">
-  <defs>
-    <!-- Terracotta Gradient -->
-    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E56A44"/>
-      <stop offset="50%" stop-color="#C85A32"/>
-      <stop offset="100%" stop-color="#9C3B1A"/>
-    </linearGradient>
-
-    <!-- Deep Arayat Forest Gradient -->
-    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2D6A50"/>
-      <stop offset="60%" stop-color="#1E4D3B"/>
-      <stop offset="100%" stop-color="#123528"/>
-    </linearGradient>
-
-    <!-- Golden Sun Gradient -->
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FCD34D"/>
-      <stop offset="50%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
-    </linearGradient>
-
-    <!-- River Curve Gradient -->
-    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.7"/>
-    </linearGradient>
-
-    <!-- Soft Drop Shadow -->
-    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" flood-color="#000000"/>
-    </filter>
-  </defs>
-
-  <!-- LOGO EMBLEM ICON (Left side: 140x140 area) -->
-  <g transform="translate(15, 10)">
-    <!-- Circular Shield Base -->
-    <circle cx="70" cy="70" r="66" fill="#FBF8F3" stroke="#E6DFD5" stroke-width="2"/>
-    <circle cx="70" cy="70" r="62" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="3,3"/>
-
-    <!-- Rising Sun over Arayat -->
-    <g transform="translate(70, 68)">
-      <!-- Sun Rays -->
-      <path d="M 0,-48 L 0,-38 M 34,-34 L 27,-27 M 48,0 L 38,0 M 34,34 L 27,27 M 0,48 L 0,38 M -34,34 L -27,27 M -48,0 L -38,0 M -34,-34 L -27,-27" 
-            stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
-      <!-- Sun Disc -->
-      <circle cx="0" cy="-6" r="24" fill="url(#goldGrad)" opacity="0.95"/>
-    </g>
-
-    <!-- Iconic Silhouette of Mount Arayat (Solitary volcanic peak with signature ridges) -->
-    <!-- Rear Ridge -->
-    <path d="M 12 108 
-             Q 35 88 52 70 
-             Q 66 52 70 48 
-             Q 76 54 88 72 
-             Q 106 90 128 108 
-             Z" 
-          fill="#164332" opacity="0.45"/>
-
-    <!-- Main Mount Arayat Silhouette -->
-    <path d="M 14 116 
-             C 32 104, 46 86, 62 62 
-             C 66 56, 69 52, 72 52 
-             C 75 52, 78 56, 82 64 
-             C 96 86, 110 104, 126 116 
-             Z" 
-          fill="url(#forestGrad)" filter="url(#softShadow)"/>
-
-    <!-- Arayat South Peak Ridge Highlight -->
-    <path d="M 72 52 
-             C 74 65, 78 82, 85 102 
-             C 88 108, 92 114, 96 116 
-             C 110 104, 120 92, 126 116 
-             Z" 
-          fill="#133829" opacity="0.35"/>
-
-    <!-- Rio Grande de Pampanga River Waves -->
-    <path d="M 18 114 
-             C 38 108, 56 122, 74 114 
-             C 92 106, 108 120, 122 114 
-             L 122 126 
-             C 108 128, 92 118, 74 124 
-             C 56 130, 38 118, 18 124 
-             Z" 
-          fill="url(#riverGrad)"/>
-
-    <!-- Subtle Golden Heart Accent (Symbolizing 'I Love') -->
-    <g transform="translate(70, 96) scale(0.65)">
-      <path d="M 0, -6 
-               C -5, -13 -14, -10 -14, -3 
-               C -14, 5 -3, 10 0, 14 
-               C 3, 10 14, 5 14, -3 
-               C 14, -10 5, -13 0, -6 Z" 
-            fill="url(#terracottaGrad)" stroke="#FFFFFF" stroke-width="1.5" filter="url(#softShadow)"/>
-    </g>
-
-    <!-- Golden Stars (Kapampangan Excellence) -->
-    <polygon points="32,44 34,48 38,48 35,51 36,55 32,53 28,55 29,51 26,48 30,48" fill="#F59E0B"/>
-    <polygon points="108,44 110,48 114,48 111,51 112,55 108,53 104,55 105,51 102,48 106,48" fill="#F59E0B"/>
-  </g>
-
-  <!-- TYPOGRAPHY SECTION (Right side) -->
-  <g transform="translate(170, 0)">
-    <!-- Small Top Kicker -->
-    <text x="0" y="44" 
-          font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
-          font-size="12" 
-          font-weight="700" 
-          letter-spacing="4" 
-          fill="#C85A32" 
-          text-transform="uppercase">
-      PROVINCE OF CULINARY HERITAGE
-    </text>
-
-    <!-- Main Brand Name: I LOVE PAMPANGA -->
-    <g transform="translate(0, 88)">
-      <!-- 'I' -->
-      <text x="0" y="0" 
-            font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
-            font-size="44" 
-            font-weight="900" 
-            letter-spacing="-1" 
-            fill="#1E4D3B">
-        I
-      </text>
-
-      <!-- Vibrant Heart -->
-      <g transform="translate(26, -20) scale(0.95)">
-        <path d="M 12, 4 
-                 C 8, -3 -1, -2 -1, 6 
-                 C -1, 14 8, 20 12, 24 
-                 C 16, 20 25, 14 25, 6 
-                 C 25, -2 16, -3 12, 4 Z" 
-              fill="url(#terracottaGrad)"/>
-      </g>
-
-      <!-- 'PAMPANGA' -->
-      <text x="64" y="0" 
-            font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
-            font-size="44" 
-            font-weight="900" 
-            letter-spacing="0.5" 
-            fill="#1E4D3B">
-        PAMPANGA
-      </text>
-    </g>
-
-    <!-- Subtitle / Tagline -->
-    <g transform="translate(2, 116)">
-      <text x="0" y="0" 
-            font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
-            font-size="12.5" 
-            font-weight="600" 
-            letter-spacing="1.5" 
-            fill="#6B7280">
-        CULINARY &amp; HERITAGE CAPITAL OF THE PHILIPPINES
-      </text>
-      <!-- Elegant Gold Accent Line -->
-      <line x1="0" y1="12" x2="340" y2="12" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
-    </g>
-  </g>
-</svg>
-
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-950 p-1.5 border border-amber-400/40 flex items-center justify-center shrink-0">
+              <svg viewBox="0 0 64 64" class="w-full h-full" fill="none">
+                <circle cx="32" cy="24" r="10" fill="#F59E0B"/>
+                <path d="M 8 51 L 23 27 L 30 36 L 38 23 L 56 51 Z" fill="#FAF8F5"/>
+                <path d="M 23 27 L 30 36 L 38 23 L 56 51 L 32 51 Z" fill="#E6DFD5" opacity="0.6"/>
+                <path d="M 32 40 C 30.5 37 26 37 26 40.5 C 26 44 32 48 32 48 C 32 48 38 44 38 40.5 C 38 37 33.5 37 32 40 Z" fill="#C85A32"/>
+              </svg>
             </div>
             <div>
-              <span class="text-2xl font-extrabold font-serif tracking-tight text-white">I Love <span class="text-amber-400">Pampanga</span></span>
-              <div class="text-[11px] text-stone-400">ilovepampanga.com</div>
+              <span class="text-2xl font-extrabold font-serif tracking-tight text-white leading-none">I Love <span class="text-amber-400">Pampanga</span></span>
+              <div class="text-[10px] text-stone-400 font-semibold tracking-wider uppercase mt-1">Culinary &amp; Heritage Capital</div>
             </div>
           </div>
 
