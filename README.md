@@ -53,7 +53,7 @@
 
 ### 4. Historic Churches & Religious Heritage
 - Deep architectural profiles of Pampanga’s colonial churches:
-  - **San Guillermo Parish Church (Bacolor):** The world-famous "Sunken Church" half-buried by the 1991 Mt. Pinatubo lahar.
+  - **San Guillermo Parish Church (Bacolor):** The world-famous "Sunken Church" half-buried by Mt. Pinatubo lahar flows — first after the 1991 eruption, most devastatingly in September 1995 (Typhoon Sibyl/Mameng).
   - **Betis Church / St. James the Apostle (Guagua):** The "Sistine Chapel of the Philippines" with monumental ceiling frescoes.
   - **Holy Rosary Parish Church (Santo Rosario, Angeles City):** Minor Basilica of Our Lady of the Most Holy Rosary, with twin-bell towers, 1909 completion, and wartime history.
   - **Metropolitan Cathedral of San Fernando:** Seat of the Archdiocese and historical site of revolutionary history.
@@ -63,7 +63,7 @@
 - **"Visitor Guide"** modal covering architectural styles, key features, mass schedules, GPS coordinates, and pilgrim etiquette (dress code, photography rules).
 
 ### 5. Tourist Spots & Famous Destinations
-- **Mount Arayat Protected Landscape:** Hiking trails (Pinnacle Rock, South Peak), freshwater spring pools, and the legend of Mariang Sinukuan (proclaimed a Protected Landscape in April 2022).
+- **Mount Arayat Protected Landscape (MAPL):** Hiking trails (Pinnacle Rock, South Peak), freshwater spring pools, and the legend of Mariang Sinukuan (proclaimed a Protected Landscape in April 2022 under RA 11684, within the Expanded NIPAS Act, RA 11038).
 - **Giant Lantern Festival (Ligligan Parul):** Asia's Christmas capital showcasing 20-foot light-synchronized kaleidoscopic lanterns.
 - **Clark Freeport Zone:** Clark Museum & 4D Theater, Parade Grounds, and former US Air Force base heritage.
 - **Aqua Planet:** 10-hectare premier water theme park with 38+ rides.
