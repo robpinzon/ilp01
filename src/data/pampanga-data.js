@@ -959,8 +959,19 @@ export const TOURIST_SPOTS = [
     bestTime: "Mid-December to early January — 2026 competition night: Saturday, December 19, 2026, 6:00 PM; nightly exhibition shows December 20–23, 25–30 and January 1–6 at 6:30 PM and 7:30 PM",
     fee: "Free public viewing",
     description: "Globally celebrated as the world's most dazzling Christmas exhibition, the Ligligan Parul showcases colossal 20-foot lanterns crafted with up to 10,000 synchronized light bulbs. Master lantern makers (magpaparul) synchronize these lights manually through giant rotating aluminum cylinders (tambor) with hairpin circuits, creating mesmerizing dancing kaleidoscope patterns timed to orchestra and brass band music.",
-    highlights: ["20-foot kaleidoscopic giant lanterns competing for top honors", "Analog rotor technology (tambor) preserving century-old ingenuity", "Live brass band performances and Christmas village exhibits", "Parul Sampernandu souvenir stalls"],
+    highlights: ["20-foot kaleidoscopic giant lanterns competing for top honors", "Analog rotor technology (tambor) preserving century-old ingenuity", "Live brass band performances and Christmas village exhibits", "Parul Sampernandu souvenir stalls", "Eight barangays compete in 2026: Bulaon (defending champion), Calulut, Del Pilar, Del Rosario, Dolores, San Jose, San Nicolas and Sto. Niño — each with a ₱400,000 subsidy"],
     visitorTips: "Arrive before 4:00 PM on competition night to secure prime grandstand seats. Parking fills up quickly; shuttle services operate from designated city hubs."
+  },
+  {
+      id: "la-naval-de-bacolor",
+      name: "La Naval de Bacolor",
+      category: "Festivals & Cultural Spectacles",
+      location: "San Guillermo Parish Church, Bacolor",
+      bestTime: "3rd Sunday of November (Novena the nine days before) — next: Sunday, 21 November 2027",
+      fee: "Open to the public",
+      description: "The annual fiesta of Nuestra Señora del Santisimo Rosario, La Naval de Bacolor, and the town fiesta of Bacolor, held every 3rd Sunday of November. The novena runs the nine days before fiesta day, with the Rosary and Novena at 5:00 PM and Mass at 6:00 PM each evening. On fiesta day, seven Masses are celebrated from 5:00 AM to 6:00 PM, closing with a solemn procession after the last Mass and the Despedida a la Virgen. The 241st fiesta was celebrated on Sunday, 15 November 2026.",
+      highlights: ["Annual fiesta of La Naval de Bacolor — every 3rd Sunday of November", "Novena the nine days before: Rosary and Novena 5:00 PM, Mass 6:00 PM", "Seven Masses on fiesta day, 5:00 AM–6:00 PM, then the solemn procession"],
+      visitorTips: "The solemn procession follows immediately after the 6:00 PM Mass on fiesta day."
   },
   {
     id: "clark-freeport-zone",
