@@ -1,0 +1,39 @@
+# Deploy the ilp01 bundle to the ilovepampanga.com Worker.
+# ilp01 is the single source of truth. Cloudflare serves the private
+# robpinzon/ilovepampanga repo (public/), so this workflow copies the
+# committed bundle there on every push that changes it. Cloudflare
+# Workers Builds then auto-deploys. Never edit the deploy repo directly.
+name: Deploy to ilovepampanga
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - favicon.svg
+      - logo-arayat.svg
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out ilp01
+        uses: actions/checkout@v4
+
+      - name: Check out deploy repo
+        uses: actions/checkout@v4
+        with:
+          repository: robpinzon/ilovepampanga
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          path: deploy
+
+      - name: Copy bundle and push if changed
+        run: |
+          cp index.html favicon.svg logo-arayat.svg deploy/public/
+          cd deploy
+          git config user.name "robpinzon"
+          git config user.email "rspinzon@gmail.com"
+          git add public/index.html public/favicon.svg public/logo-arayat.svg
+          git diff --cached --quiet || git commit -m "Deploy from ilp01 ${{ github.sha }}"
+          git push
